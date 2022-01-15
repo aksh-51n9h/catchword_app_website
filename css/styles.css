@@ -5,9 +5,21 @@ body{
     padding: 3% 15%;
 }
 
+@media (max-width: 1028px) {
+    .container-fluid{
+        padding: 5%;
+    }
+}
+
 #title{
     background-color: rgb(8, 15, 34);
     color: white;
+}
+
+@media (max-width: 1028px) {
+    #title{
+        text-align: center;
+    }
 }
 
 h1{
@@ -54,13 +66,23 @@ h3{
 
 /* Title Image */
 .title-image{
+    position: absolute;
     margin: auto;
     transform: rotate(18deg);
+}
+
+@media (max-width: 1028px) {
+    .title-image{
+        position: static;
+        transform: rotate(0deg);
+    }
 }
 
 /* Features */
 #features{
     text-align: center;
+    background-color: white;
+    position: relative;
 }
 
 .feature-icon{
@@ -84,4 +106,14 @@ h3{
 /* Press */
 #press{
     background-color: rgb(8, 15, 34);
+}
+
+/* Footer */
+#footer{
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-icon{
+    padding: 0.8rem;
 }
